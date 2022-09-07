@@ -1,20 +1,13 @@
 #!/usr/bin/python3 env
-
-
-
 import os
 import random
 import time
 import Payloads.pld_types as plds
 
-
-
 # Cooded By : waseem Akram
 # Youtube   : https://youtube.com/hackerwasi
 # Github    : https://github.com/evildevill
 # Instagram : https://instagram.com/blckspidr
-
-
 
 rows, columns = os.popen('stty size', 'r').read().split()
 Colms =  int ((int (columns)-37) / 2)-2
@@ -25,8 +18,6 @@ fore = random.choice (colors)
 fore1 = "\033[1;36m"
 fore2 = "\033[1;35m"
 os.system ("clear")
-
-
 
 def finaly ():
 	print (c+"\033[1;34m __________________________________")
@@ -42,8 +33,6 @@ blue = "\033[1;34m"
 cyan = "\033[1;36m"
 norml = "\033[0m"
 
-
-
 def banner ():
 	os.system ("clear")
 	print (" \n ")
@@ -54,10 +43,6 @@ def banner ():
    #print (c+fore+" ┃╰━╯┃╰┫╭╮┃╰━┫╭╮╮╱╰╮╭┫┃━┫┃┃┃╰╯┃┃┃┃")
    #print (c+fore+" ╰━━━┻━┻╯╰┻━━┻╯╰╯╱╱╰╯╰━━┻╯╰┻━━┻┻┻╯")
   # print (c+fore+"       \033[1;47m   \033[1;34mBlack \033[1;30m~~\033[1;35m|\033[1;34m••\033[1;35m|\033[1;30m~~ \033[1;34mVenom   \033[1;0m     ")
-
-
-
-
 
 # configure metasploit is installed or not.
 def Check_requirments ():
@@ -99,8 +84,6 @@ def chose_opt ():
 	else:
 		pld_to_gen = ["plds.Android ()", "plds.Windows ()", "plds.Linux()", "plds.Mac ()", "plds.Python ()", "plds.Bash ()", "plds.Perl ()", "exite ()"]
 		exec (pld_to_gen[pld_type - 1])
-
-
 
 def exite ():
 	time.sleep (1.2)
