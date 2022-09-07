@@ -1,16 +1,13 @@
 #!/usr/bin/python3 env
 
 # Cooded By : Waseem Akram
-# Youtube   : https://youtube.com/channel/UC9L82byLSAXUKCJXc9zrnlQ
+# Youtube   : https://youtube.com/HackerWasii
 # Github    : https://github.com/evildevill
 # Instagram : https://instagram.com/blckspidr
-
 
 import os
 import time
 import BlckVenom as back
-
-
 
 type = ["reverse_tcp", "reverse_http", "reverse_https"]
 cyan = "\033[1;36m"
@@ -31,8 +28,6 @@ def output_pld (output):
 			back.main ()
 	else:
 		print ("Your Payload has not Generated Successfully. Please Try again.")
-
-
 
 def Android ():
 	back.banner ()
@@ -63,8 +58,7 @@ def Android ():
 		except ValueError:
 			print ("\033[1;34mBlck \033[1;30m~~\033[1;35m|\033[1;34m••\033[1;35m|\033[1;30m~~ \033[1;34mVenom\033[1;31m/~"+cyan+"  Please Retry and Enter number from given options."+norml)
 			Android ()
-
-
+			
 def Windows ():
 	back.banner ()
 	windows_pld = int (input ("""\033[1;34mSelect type of Windows Payload.\n
@@ -95,7 +89,7 @@ def Windows ():
 			print ("\033[1;34mBlck \033[1;30m~~\033[1;35m|\033[1;34m••\033[1;35m|\033[1;30m~~ \033[1;34mVenom\033[1;31m/~"+cyan+"  please Retry Enter number from given options."+norml)
 			time.sleep(3)
 			Windows ()
-
+			
 def Linux ():
 	back.banner ()
 	linux_pld = int (input ("""\033[1;36mSelect type of Linux Payload.\n
@@ -159,8 +153,6 @@ def Python ():
 			time.sleep(3)
 			Python ()
 
-
-
 def Mac ():
 	back.banner ()
 	lhost = (input ("\n\033[1;34mENTER Local IP :---->>> \033[1;36m ")).replace (" ","")
@@ -171,9 +163,6 @@ def Mac ():
 	print (cyan+"Creating Payload...\n")
 	os.system (pld)
 	output_pld (output)
-
-
-
 
 def Bash ():
 	back.banner ()
@@ -186,7 +175,6 @@ def Bash ():
 	os.system (pld)
 	output_pld (output)
 
-
 def Perl ():
 	back.banner ()
 	lhost = (input ("\n\033[1;34mENTER Local IP :---->>> \033[1;36m ")).replace (" ","")
@@ -197,9 +185,6 @@ def Perl ():
 	print (cyan+"Creating Payload...\n")
 	os.system (pld)
 	output_pld (output)
-
-
-
 
 def main ():
 	exit ()
